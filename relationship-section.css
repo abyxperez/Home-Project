@@ -1,0 +1,98 @@
+.relationships-section {
+    background-color: #1C3D5A; /* Dark blue background */
+    color: white;
+    padding: 50px 20px;
+}
+
+.relationship-info {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+
+.relationship-details {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Relationship Grid - Horizontal Layout */
+.relationship-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left Section - 50% width */
+.left-section-grid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+    gap: 20px;
+}
+
+/* Card Styling */
+.left-section-cards {
+    background: white;
+    color: #1C3D5A;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon img {
+    width: 130px; /* Small icons */
+    height: auto;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card-details {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Right Section - 50% width */
+.right-section-grid {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.right-section-grid img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .relationship-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-section-grid, 
+    .right-section-grid {
+        width: 100%;
+    }
+
+    .left-section-grid {
+        grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    }
+
+    .right-section-grid img {
+        max-width: 80%;
+    }
+}

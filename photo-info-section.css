@@ -1,0 +1,80 @@
+.photo-info-section {
+    display: flex;
+    flex-wrap: wrap; /* Responsive layout */
+    height: 100vh; /* Full viewport height */
+    margin-top: 45px;
+}
+
+/* Left side - Info Section */
+.info-section {
+    flex: 1; /* Takes 50% width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content */
+    background-color: #1C3D5A;
+    text-align: center;
+}
+
+.info-title {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: "Playfair Display", serif;
+    color: white;
+}
+
+.info-list {
+    list-style-type: disc;
+    padding: 0;
+    padding-left: 25%;
+}
+
+.info-list li {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: left;
+}
+
+/* Right side - Photo Section */
+.photo-section {
+    flex: 1; /* Takes 50% width */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensures full height */
+}
+
+.first-photo, .second-photo {
+    flex: 1; /* Each photo takes 50% of the photo section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensures no overflow */
+}
+
+.photo-section img {
+    width: 100%;
+    height: 100%; /* Each image takes full height of its container */
+    object-fit: cover; /* Keeps image proportions while filling the space */
+}
+
+/* 📌 Responsive for smaller screens */
+@media (max-width: 768px) {
+    .photo-info-section {
+        flex-direction: column; /* Stack sections */
+        height: auto; /* Allow content to define height */
+    }
+
+    .info-section, .photo-section {
+        flex: 1 1 100%; /* Each takes full width */
+    }
+
+    .photo-section {
+        height: 500px; /* Adjust height for better display */
+    }
+
+    .first-photo, .second-photo {
+        flex: 1;
+    }
+}

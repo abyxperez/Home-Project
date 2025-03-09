@@ -1,0 +1,149 @@
+/* Work With Us Section */
+.work-with-us-section {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Background Image with Gradient Overlay */
+.iamge-section-work-with-us {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.image-background-work-with-us {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(30%);
+}
+
+/* Gradient Overlay */
+.iamge-section-work-with-us::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Content Over Image */
+.work-with-us-heading,
+.work-with-us-description,
+.contact-us-button {
+    position: relative;
+    z-index: 2;
+}
+
+.work-with-us-heading h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 15px;
+}
+
+.work-with-us-description {
+    max-width: 700px;
+}
+
+.work-with-us-p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* Contact Us Button */
+.contact-us-button {
+    background-color: white;
+    color: #1C3D5A;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-us-button:hover {
+    background-color: #1C3D5A;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .work-with-us-heading h1 {
+        font-size: 2rem;
+    }
+
+    .work-with-us-p {
+        font-size: 1rem;
+    }
+}
+
+/* Main Info Section */
+.main-info {
+    width: 70%;
+    max-width: 900px;
+    margin: 0 auto; /* Centers the div horizontally */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Heading Styles */
+.main-info-heading .main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #C0A060;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 20px;
+}
+
+/* Details Styling */
+.main-info-details p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-info {
+        width: 90%; /* Reduce width on smaller screens */
+    }
+
+    .main-info-heading .main-title {
+        font-size: 2rem;
+    }
+
+    .main-info-details p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-info-heading .main-title {
+        font-size: 1.8rem;
+    }
+
+    .main-info-details p {
+        font-size: 0.95rem;
+    }
+}
+

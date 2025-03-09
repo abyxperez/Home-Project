@@ -1,0 +1,67 @@
+.comprehensive-layout-section{
+    background-color: #1C3D5A;
+    padding-bottom: 50px;
+
+}
+
+.comprehensive-layout-title{
+    text-align: center;
+    font-family: "Playfair Display";
+    color: white;
+}
+
+.section-title{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.content-tile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 40px; /* Space between cards */
+    padding: 20px;
+    max-width: 800px; /* Prevents grid from stretching too much */
+    margin: 0 auto; /* Centers the grid */
+}
+
+/* Style for individual cards */
+.container-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for images inside cards */
+.illustration img {
+    width: 150px; /* Adjust size */
+    height: auto;
+    margin-bottom: 8px;
+}
+
+/* Style for card title */
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+    color: #C0A060;
+}
+
+/* Style for card content */
+.card-content p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* 📌 Responsive: 1 card per row on smaller screens */
+@media (max-width: 600px) {
+    .content-tile {
+        grid-template-columns: 1fr; /* Switch to 1 column per row */
+    }
+}

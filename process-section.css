@@ -1,0 +1,99 @@
+.process-section {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Same height as the background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Ensures text is readable on dark background */
+}
+
+/* Background image with gradient overlay */
+.process-section-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Gradient overlay */
+    background: linear-gradient(to right, rgba(17, 17, 17, 0.895), rgba(53, 53, 53, 0.988)), 
+                url('images/image-8-85.png');
+    
+    background-size: cover;
+    background-position: center;
+}
+
+/* Ensures the image inside the background div fills properly */
+.process-section-background img {
+    display: none; /* Hide the img tag since background handles the image */
+}
+
+/* Content section over the background */
+.process-section-content {
+    position: relative; /* Ensures content is above the background */
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    z-index: 2;
+}
+
+.process-section-heading {
+    flex: 1; 
+    padding: 20px;
+    align-content: center;
+}
+
+.process-section-title {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+}
+
+/* Right side: Process List */
+.process-section-list {
+    flex: 1; /* Takes 50% */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Individual Step (Number + Step in one row) */
+.process-section-steps {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Space between number and step */
+}
+
+.number {
+    color: rgb(255, 255, 255);
+    font-family: "Playfair Display", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+}
+
+.step {
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+
+@media (max-width: 768px) {
+    .process-section-content {
+        flex-direction: column; /* Stack items on small screens */
+        text-align: center;
+    }
+
+    .process-section-heading, 
+    .process-section-list {
+        flex: none;
+        width: 100%;
+    }
+
+    .process-section-steps {
+        justify-content: center;
+    }
+}

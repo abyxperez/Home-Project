@@ -1,0 +1,86 @@
+.benefits-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.benefits-container {
+    background-color: #1C3D5A; /* Blue background */
+    color: white; /* White text */
+    padding: 30px;
+    border-radius: 15px; /* Rounded corners */
+    max-width: 1000px; /* Limits width */
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.benefits-title {
+    text-align: center; /* Centers the title */
+    margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
+    color: #C0A060;
+}
+
+.benefits-heading {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.benefits-container ul {
+    padding-left: 20px; /* Adds space for bullets */
+    margin: 20px;
+}
+
+.benefits-container li {
+    list-style-type: disc; /* Ensures bullet points appear */
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .benefits-section {
+        padding: 20px;
+    }
+
+    .benefits-container {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .benefits-heading {
+        font-size: 24px;
+    }
+
+    .benefits-container ul {
+        padding-left: 0; /* Removes left padding for small screens */
+    }
+
+    .benefits-container li {
+        text-align: left; /* Keeps list readable */
+        font-size: 14px;
+    }
+}
+
+.text-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh; /* Centers vertically */
+    padding: 20px;
+    height: 300px;
+    margin: 20px;
+}
+
+.text {
+    max-width: 800px; /* Limits width for readability */
+    width: 100%;
+    text-align: center; /* Centers the text */
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333; /* Dark gray for readability */
+    padding: 10px;
+}

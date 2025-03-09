@@ -1,0 +1,131 @@
+/* Footer Section */
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff; /* White background */
+    color: #333;
+    padding: 40px 20px;
+}
+
+/* Left and Right Footer Sections */
+.footer-left, .footer-right {
+    width: 50%;
+    padding: 20px;
+}
+
+.footer-right{
+    padding-left: 80px;
+    padding-top: 30px;
+}
+/* Footer Left - Card */
+.footer-left-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #1C3D5A; /* Blue background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Footer Left - Card Elements */
+.footer-left-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    color: #C0A060;
+}
+
+.footer-left-subscribe {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Input Field */
+.footer-left-card input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Privacy Policy Section */
+.privacy-policy-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    flex-wrap: nowrap; /* Prevents the checkbox from going on top */
+    text-align: left;
+}
+
+/* Ensure checkbox stays aligned */
+.privacy-policy-section input[type="checkbox"] {
+    align-items: left;
+    margin-top: 5px;
+    flex-shrink: 0; /* Prevents shrinking on smaller screens */
+}
+
+p{
+    font-size: 13px;
+}
+
+
+/* Subscribe Button */
+.subscribe-button {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+/* Footer Right - Sections */
+.footer-right p {
+    margin-bottom: 10px;
+}
+
+.address-section, 
+.contact-section, 
+.social-media-section, 
+.sponsors-section, 
+.copyright-section {
+    margin-bottom: 20px;
+}
+
+/* Social Media and Sponsors Icons */
+.social-media-icon, .spomsors-icon {
+    width: 30px; /* Make images small */
+    height: auto;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/* Copyright Section - Underlined Text */
+.copyright-section p a {
+    text-decoration: underline;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-left, .footer-right {
+        width: 100%; /* Stack on smaller screens */
+        text-align: left;
+    }
+
+    .privacy-policy-section {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .privacy-policy-section input[type="checkbox"] {
+        margin: 0;
+    }
+}

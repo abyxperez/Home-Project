@@ -1,0 +1,95 @@
+.partners-section {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+}
+
+.partners-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.display-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-image {
+     /* Keeps the big image small */
+    height: auto;
+}
+
+.display-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.image-row .partnership-image {
+    width: 110px; /* Makes the images inside .image-row small */
+    height: auto;
+}
+
+/* Styling for text sections */
+.details {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.detail-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+    color: #C0A060;
+}
+
+.detail-info {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .partners-card {
+        flex-direction: column;
+    }
+
+    .display-image,
+    .display-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .display-info {
+        padding: 20px 10px;
+    }
+
+    .image-row {
+        flex-wrap: wrap;
+    }
+
+    .big-image {
+        max-width: 180px; /* Reduces size on smaller screens */
+    }
+
+    .image-row .partnership-image {
+        width: 50px; /* Further reduces image size for smaller screens */
+    }
+}

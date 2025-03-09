@@ -1,0 +1,131 @@
+.market-section {
+    background-color: #1C3D5A; /* Blue background */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.main-heading h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+    color: #C0A060;
+    margin-bottom: 20px;
+}
+
+.subheading h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid-card {
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-label {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+    color: #C0A060;
+}
+
+.grid-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #1C3D5A;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .grid-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+}
+
+@media (max-width: 768px) {
+    .main-heading h1 {
+        font-size: 32px;
+    }
+
+    .subheading h2 {
+        font-size: 20px;
+    }
+
+    .grid-list {
+        grid-template-columns: 1fr; /* 1 column */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-heading h1 {
+        font-size: 28px;
+    }
+
+    .subheading h2 {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .grid-label {
+        font-size: 20px;
+    }
+
+    .grid-description {
+        font-size: 14px;
+    }
+}
+
+.image-row {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    width: 100%;
+    padding: 20px;
+}
+
+.image-row img {
+    max-width: 100%; /* Ensures responsiveness */
+    width: 520px; /* Keeps the image small */
+    height: auto;
+    display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .image-row img {
+        width: 520px; /* Smaller size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-row img {
+        width: 520px; /* Even smaller for very small screens */
+    }
+}
+

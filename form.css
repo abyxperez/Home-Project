@@ -1,0 +1,62 @@
+/* Center .form-card inside .form-section */
+.form-section {
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+/* Style the form card */
+.form-card {
+    height: 200px;
+    width: 300px;
+    background-color: #1C3D5A;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow */
+}
+
+/* Style the input field */
+.search-section input {
+    width: 200px; /* Adjust input width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.search-section :placeholder-shown {
+    text-align: left;
+    font-size: 12px;
+}
+
+.search-section input:focus::placeholder {
+    color: transparent;
+}
+
+
+/* Style the button */
+.book-appointment-section {
+    margin-top: 20px; /* Adds space between input and button */
+}
+
+.book-appointment-button {
+    width: 200px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #1C3D5A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.book-appointment-button:hover {
+    background-color: #dddddd;
+    color: #1C3D5A;
+}

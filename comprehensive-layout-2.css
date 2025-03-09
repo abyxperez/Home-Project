@@ -1,0 +1,80 @@
+/* Parent container: Two equal halves */
+.comprehensive-layout-section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal halves */
+    align-items: stretch; /* Make both sections equal height */
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+}
+
+/* Left Side: Full-height image */
+.image-section2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.image-section2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the entire section */
+}
+
+/* Right Side: Content */
+.content-tile2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+/* Individual Card */
+.container-card2 {
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%; /* Adjust width */
+}
+
+/* Illustration */
+.illustration2 img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+/* Card Title */
+.card-title2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Playfair Dispay", serif;
+    color: #C0A060;
+}
+
+/* Card Content */
+.card-content2 p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* 📌 Responsive Design: Stack on Mobile */
+@media (max-width: 768px) {
+    .comprehensive-layout-section2 {
+        grid-template-columns: 1fr; /* Stack items */
+        height: auto;
+    }
+
+    .image-section2 {
+        height: 50vh; /* Image takes half the viewport on mobile */
+    }
+
+    .content-tile2 {
+        padding: 10px;
+        
+    }
+}

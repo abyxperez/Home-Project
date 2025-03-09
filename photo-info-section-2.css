@@ -1,0 +1,79 @@
+.photo-info-section2 {
+    display: flex;
+    flex-wrap: wrap; /* Responsive layout */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Left side - Info Section */
+.info-section2 {
+    flex: 1; /* Takes 50% width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content */
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.info-title2 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: "Playfair Display", serif;
+    color: #1C3D5A;
+}
+
+.info-list2 {
+    list-style-type: disc;
+    padding: 0;
+    padding-left: 25%;
+}
+
+.info-list2 li {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #1C3D5A;
+    text-align: left;
+}
+
+/* Right side - Photo Section */
+.photo-section2 {
+    flex: 1; /* Takes 50% width */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensures full height */
+}
+
+.first-photo2, .second-photo2 {
+    flex: 1; /* Each photo takes 50% of the photo section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensures no overflow */
+}
+
+.photo-section2 img {
+    width: 100%;
+    height: 100%; /* Each image takes full height of its container */
+    object-fit: cover; /* Keeps image proportions while filling the space */
+}
+
+/* 📌 Responsive for smaller screens */
+@media (max-width: 768px) {
+    .photo-info-section2 {
+        flex-direction: column; /* Stack sections */
+        height: auto; /* Allow content to define height */
+    }
+
+    .info-section2, .photo-section2 {
+        flex: 1 1 100%; /* Each takes full width */
+    }
+
+    .photo-section2 {
+        height: 500px; /* Adjust height for better display */
+    }
+
+    .first-photo2, .second-photo2{
+        flex: 1;
+    }
+}
